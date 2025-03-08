@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375, initial-scale=1.0">
+    <title>🫶Поздравление с 8 марта🫶</title>
+    <style>
+        /* Устанавливаем фон */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('back.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Контейнер */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 375px;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Фото */
+        .center-img {
+            width: 90%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Кастомный стиль аудиоплеера */
+        .audio-player {
+            width: 100%;
+            max-width: 350px;
+            min-height: 60px; /* Увеличил размер */
+            background: linear-gradient(135deg, #ff79c6, #ffb6c1); /* Градиент в розовых тонах */
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+        }
+
+        /* Стилизация стандартного аудиоплеера */
+        .audio-player audio {
+            width: 90%;
+            filter: hue-rotate(300deg);
+        }
+
+        /* Иконка цветка */
+        .flower-icon {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Текст */
+        .greeting-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 90%;
+        }
+
+        /* Анимация при наведении */
+        .audio-player:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="spiralbetty_1741219896467.png" alt="Поздравительное фото" class="center-img">
+        
+        <div class="audio-player">
+            <img src="back.jpeg" alt="Цветок" class="flower-icon"> <!-- Иконка цветка -->
+            <audio controls>
+                <source src="azi.ogg" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио.
+            </audio>
+        </div>
+
+        <div class="greeting-text">
+            Дорогая Азима! 🌸✨ <br><br>
+            С Международным женским днём! Пусть этот день наполнится радостью, теплом и искренними улыбками. Вы – источник вдохновения, красоты и добра! <br><br>
+            Желаю вам здоровья, счастья, бесконечной любви и исполнения всех желаний. Пусть каждый день приносит новые радости, успехи и приятные сюрпризы! 💐 <br><br>
+            С праздником! 💖
+        </div>
+    </div>
+
+</body>
+</html>
